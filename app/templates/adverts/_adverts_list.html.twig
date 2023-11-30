@@ -1,0 +1,6 @@
+
+{% for advert in adverts %}
+    <turbo-frame id="advert-{{ advert.id }}">
+        {% include 'adverts/_advert.html.twig' with {'advert': advert} %}
+    </turbo-frame>
+{% endfor %}

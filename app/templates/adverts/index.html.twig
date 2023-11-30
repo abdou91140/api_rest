@@ -1,0 +1,10 @@
+{% extends("base.html.twig") %}
+
+{% block body %}
+<div class="container">
+    <h1>Adverts List</h1>
+    <turbo-frame id="adverts-list">
+        {% include 'adverts/_adverts_list.html.twig' %}
+    </turbo-frame>
+</div>
+{% endblock %}

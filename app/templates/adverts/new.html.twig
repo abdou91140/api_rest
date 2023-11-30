@@ -1,0 +1,12 @@
+
+{% block body %}
+    <div class="container">
+        <h1>Create New Advert</h1>
+        {{ form_start(form) }}
+        {{ form_row(form.title) }}
+        {{ form_row(form.content) }}
+        {{ form_row(form.category) }}
+        <button type="submit">Create Advert</button>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
