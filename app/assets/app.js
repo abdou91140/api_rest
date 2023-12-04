@@ -1,3 +1,4 @@
+import { registerReactControllerComponents } from '@symfony/ux-react';
 import { Turbo } from '@hotwired/turbo';
 
 document.addEventListener('turbo:load', () => {
@@ -17,3 +18,4 @@ document.addEventListener('turbo:load', () => {
         return new Tooltip(tooltipTriggerEl)
     });
 });
+registerReactControllerComponents(require.context('./react/controllers', true, /\.(j|t)sx?$/));
